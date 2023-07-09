@@ -147,14 +147,6 @@ h1 {
   letter-spacing: 0.12em;
 }
 
-footer li {
-  transition: all 0.3s;
-
-  &:hover {
-    transform: translateY(-8px);
-  }
-}
-
 .sub-title{
   position: relative;
   &::after{
