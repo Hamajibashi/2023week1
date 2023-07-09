@@ -1,0 +1,173 @@
+@import './reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Castoro", serif;
+  line-height: 1.5;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #ae0000;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+// 間距
+$spacer: 8px;
+
+.mb {
+  &-1 {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  &-2 {
+    margin-bottom: $spacer * 2;
+  }
+
+  &-3 {
+    margin-bottom: $spacer * 5;
+  }
+}
+
+.me-3 {
+  margin-right: $spacer * 5;
+}
+
+.p {
+  &y-4 {
+    padding-top: $spacer * 6;
+    padding-bottom: $spacer * 6;
+  }
+
+  &y-5 {
+    padding-top: $spacer * 8;
+    padding-bottom: $spacer * 8;
+  }
+
+  &t-6 {
+    padding-top: $spacer * 10;
+  }
+
+  &t-7 {
+    padding-top: $spacer * 20;
+  }
+
+  &b-7 {
+    padding-bottom: $spacer * 20;
+  }
+}
+
+// 字體大小
+.font {
+  &-title {
+    font-size: 128px;
+  }
+
+  &-xl {
+    font-size: 40px;
+  }
+
+  &-lg {
+    font-size: 32px;
+  }
+
+  &-md {
+    font-size: 24px;
+  }
+
+  &-sm {
+    font-size: 20px;
+  }
+}
+
+// 文字顏色與對齊等
+.text {
+  &-primary {
+    color: #ae0000;
+  }
+
+  &-secondary {
+    color: #949494;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-end {
+    text-align: right;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+}
+
+.align-center {
+  width: max-content;
+  margin: 0 auto;
+}
+
+// 背景色
+.bg {
+  &-gray {
+    background-color: #efefef;
+  }
+
+  &-dark {
+    background-color: #000;
+  }
+}
+
+.d-inline {
+  display: inline;
+}
+
+// 個別設定
+h1 {
+  letter-spacing: 0.12em;
+}
+
+footer li {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+
+.sub-title{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 636px;
+    border-bottom: 3px solid #ae0000;
+  }
+}
+
+.intro {
+  width: 636px;
+  margin-left: auto;
+}
